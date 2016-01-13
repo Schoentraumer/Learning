@@ -1,3 +1,2 @@
-# TestGit
-TestGit is a platform for testing project management tools integration with a Git Repository without having to test it on the main site.
-Dun dun dun!
+# Portfolio Website
+This is a testing, repository and portfolio website for the items that I am using to develop my skillsets.
