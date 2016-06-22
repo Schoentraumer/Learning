@@ -1,0 +1,32 @@
+import turtle
+
+def draw_triangle(aturtle,length,orientation,iteration):
+  iteration += 1
+  
+  aturtle = turtle.Turtle() # init
+  aturtle.speed(10) # set speed
+  aturtle.color("yellow","green") # set colors
+  aturtle.shape("turtle") # set shape to a turtle
+  background = turtle.Screen()  # create background
+  background.bgcolor("blue")     # set background color to blue  
+  
+  
+  for i in range(0,3):
+      if(iteration<4):
+      #if (0):
+          aturtle.forward(length/2)
+          aturtle.left(120)
+          draw_triangle(aturtle,length/2,0,iteration)
+          aturtle.right(120)
+          aturtle.forward(length/2)
+      else:
+          aturtle.forward(length)
+      if (orientation==1):
+          aturtle.left(120)
+      else:
+          aturtle.right(120)
+
+
+draw_triangle(aturtle,150,1,0)
+
+background.exitonclick()      # click anywhere to close background
